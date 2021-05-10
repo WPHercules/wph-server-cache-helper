@@ -17,7 +17,6 @@ Litespeed servers already have this functionality included on their Litespeed pl
 * Add a "nocache" cookie to the pages or post that has the `DONOTCACHEPAGE` constant.
 * Setup Cache-Control and Expires headers to prevent cache.
 * Add an "special-secret" header to the page. Combined with custom Nginx code it will work with any page.
-* Soon will work out of the box with Gridpane server cache (on their next update).
  
 ## Installation
 
