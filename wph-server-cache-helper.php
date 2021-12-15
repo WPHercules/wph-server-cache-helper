@@ -315,7 +315,7 @@ function wph_donotcache_and_headers() {
     }
     // Gridpane cookie and header and any other Nginx servers.
     if (  defined( 'GRIDPANE' ) ) { // Gridpane uses Nginx Helper plugin but also their own constand on wp-config.php file.
-        header( 'skip-gp-cache: true', false ); // Gridpane Cache header.
+        header( 'do-not-cache: true', false ); // Gridpane Cache header.
         setcookie( 'wordpress_no_cache', 1, 0, "/$post->post_name/", '', true, true ); // Will expire at the end of the session (when the browser closes).
         return; // Header and cookie setup, nothing else to do, we can return..
     }
